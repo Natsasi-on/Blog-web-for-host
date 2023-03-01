@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/head', {title:'Edit post'}) %>
+        <link rel="stylesheet" href="/styles/add-post.css" />
+</head>
+
+<body>
+    <header>
+        <%- include('includes/header') %>
+            <div id="text-header">
+                <h1>
+                    <span class="emp-font">Edit</span> Your Post
+                </h1>
+            </div>
+    </header>
+    <main>
+        </br>
+        <section id="add-post">
+            <form action="/posts/<%= post.id %>/edit" method="post">
+                <span><label for="title">Title</label><br />
+                    <input type="text" name="title" id="title" value="<%= post.title %>" required><br />
+                </span>
+                <span><label for="summary">Summary</label><br />
+                    <input type="text" name="summary" id="summary" value="<%= post.summary %>" required><br />
+                </span>
+                <span><label for="postContent">Post</label>
+                    <br />
+                    <textarea name="postContent" id="postContent" required><%= post.body %></textarea>
+                </span>
+
+                <span> <input type="checkbox" id="categories1" name="categories" value="family">
+                    <label for="categories1">Family</label></span>
+                <span><input type="checkbox" id="categories2" name="categories" value="Sport">
+                    <label for="categories2">Sport</label></span>
+                <span><input type="checkbox" id="categories3" name="categories" value="Study">
+                    <label for="categories3">Study</label></span>
+                <span><input type="checkbox" id="categories4" name="categories" value="Movie">
+                    <label for="categories4">Movie</label></span>
+                <span><input type="checkbox" id="categories5" name="categories" value="Love">
+                    <label for="categories6">Love</label></span>
+                <span><input type="checkbox" id="categories6" name="categories" value="Food">
+                    <label for="categories6">Food</label><br></span>
+
+                <div class="btn">
+                    <button>Edit Post</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('includes/head', {title:'Ma Blog'}) %>
+    <link rel="stylesheet" href="/styles/index.css" />
+</head>
+
+<body>
+  <header>
+    <%- include('includes/header') %>
+      <div id="text-header">
+        <h1>
+          Whether you're looking to <span class="emp-font">learn something new, gain inspiration, or simply stay
+            informed,</span> our article has
+          something for <span class="emp-font">everyone.</span>
+        </h1>
+        <div id="header-browse">
+          <button class="header-browse">
+            Search posts
+            <svg viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+              <path
+                d="M11,9.7c1.4-1.9,1-4.7-0.9-6.1S5.4,2.7,4,4.6s-1,4.7,0.9,6.1c1.5,1.1,3.6,1.1,5.1,0l0,0l0.1,0.1l2.5,2.5 c0.3,0.3,0.7,0.3,0.9,0c0.3-0.3,0.3-0.7,0-0.9L11,9.7C11,9.8,11,9.8,11,9.7L11,9.7z M11.2,7.2c0,2-1.7,3.7-3.7,3.7S3.8,9.2,3.8,7.2 s1.7-3.7,3.7-3.7S11.2,5.2,11.2,7.2z" />
+              <circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="7.5" cy="7.2" r="3.4" />
+            </svg>
+          </button>
+        </div>
+      </div>
+  </header>
+  <main>
+    </br>
+    <section id="categories-nav">
+      <button>All</button>
+      <button>Family</button>
+      <button>Sport</button>
+      <button>Study</button>
+      <button>Movie</button>
+      <button>Love</button>
+      <button>Food</button>
+    </section>
+    <% if (!posts || posts.length===0){ %>
+      <br><br><br><br><br>
+      <h1> No posts found - maybe start creating some?<br>
+        <a href="/add-post"><span class="read-more">Create new post</span></a>
+      </h1>
+      <%}else {%>
+        <section id="top-post">
+          <% for (var i=0; i<posts.length; i++){ if(i==0){ %>
+            <div id="main-left-box">
+              <div>
+                <div id="main-post-left-image"><img src="<%= posts[i].image %>" alt="<%= posts[i].title%>"></div>
+                <div class="post-categories">
+                  <button>Family</button>
+                  <button>Sport</button>
+                  <button>Study</button>
+                </div>
+                <h1>
+                  <%= posts[i].title%>
+                </h1>
+                <p>
+                  <%= posts[i].summary%> <span class="read-more"><a href="/posts/<%= posts[i].id %>">Read
+                        More...</a></span>
+                </p>
+                <h4><span class="owner-post">By <%= posts[i].author_name%> </span> - <%= posts[i].date%>
+                </h4>
+                <div class="edit-box">
+                  <form action="/posts/<%= posts[i].id %>/delete" method="post">
+                    <a class="edit-btn" href="/posts/<%= posts[i].id %>/edit">Edit Post</a>
+                    <button class="delete-btn">Delete Post</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <%}else if (i==1){%>
+              <div id="main-right-box1">
+                <div class="main-post-right-image"><img src="<%= posts[i].image %>" alt="<%= posts[i].title%>"></div>
+                <div class="post-categories">
+                  <button>Family</button>
+                  <button>Sport</button>
+                  <button>Study</button>
+                </div>
+                <h1>
+                  <%= posts[i].title%>
+                </h1>
+                <p>
+                  <%= posts[i].summary%> <span class="read-more"><a href="/posts/<%= posts[i].id %>">Read
+                        More...</a></span>
+                </p>
+                <h4><span class="owner-post">By <%= posts[i].author_name%> </span> - <%= posts[i].date%>
+                </h4>
+                <div class="edit-box">
+                  <form action="/posts/<%= posts[i].id %>/delete" method="post">
+                    <a class="edit-btn" href="/posts/<%= posts[i].id %>/edit">Edit Post</a>
+                    <button class="delete-btn">Delete Post</button>
+                  </form>
+                </div>
+              </div>
+              <%}else if(i==2){%>
+                <div id="main-right-box2">
+                  <div class="main-post-right-image"><img src="<%= posts[i].image %>" alt="<%= posts[i].title%>"></div>
+                  <div class="post-categories">
+                    <button>Family</button>
+                    <button>Sport</button>
+                    <button>Study</button>
+                  </div>
+                  <h1>
+                    <%= posts[i].title%>
+                  </h1>
+                  <p>
+                    <%= posts[i].summary%> <span class="read-more"><a href="/posts/<%= posts[i].id %>">Read
+                          More...</a></span>
+                  </p>
+                  <h4><span class="owner-post">By <%= posts[i].author_name%> </span> - <%= posts[i].date%>
+                  </h4>
+                  <div class="edit-box">
+                    <form action="/posts/<%= posts[i].id %>/delete" method="post">
+                      <a class="edit-btn" href="/posts/<%= posts[i].id %>/edit">Edit Post</a>
+                      <button class="delete-btn">Delete Post</button>
+                    </form>
+                  </div>
+                </div>
+                <%}else if(i==3){%>
+                  <div id="main-right-box3">
+                    <div class="main-post-right-image"><img src="<%= posts[i].image %>" alt="<%= posts[i].title%>">
+                    </div>
+                    <div class="post-categories">
+                      <button>Family</button>
+                      <button>Sport</button>
+                      <button>Study</button>
+                    </div>
+                    <h1>
+                      <%= posts[i].title%>
+                    </h1>
+                    <p>
+                      <%= posts[i].summary%> <span class="read-more"><a href="/posts/<%= posts[i].id %>">Read
+                            More...</a></span>
+                    </p>
+                    <h4><span class="owner-post">By <%= posts[i].author_name%> </span> - <%= posts[i].date%>
+                    </h4>
+                    <div class="edit-box">
+                      <form action="/posts/<%= posts[i].id %>/delete" method="post">
+                        <a class="edit-btn" href="/posts/<%= posts[i].id %>/edit">Edit Post</a>
+                        <button class="delete-btn">Delete Post</button>
+                      </form>
+                    </div>
+                  </div>
+        </section>
+        <%}else if(i>=4){%>
+          <section id="sub-top-posts-section">
+            <div class="sub-top-posts-box">
+              <h1>
+                <%= posts[i].title%>
+              </h1>
+              <div class="post-categories">
+                <button>Family</button>
+                <button>Sport</button>
+                <button>Study</button>
+              </div>
+              <p>
+                <%= posts[i].summary%> <span class="read-more"><a href="/posts/<%= posts[i].id %>">Read
+                      More...</a></span>
+              </p>
+              <h4><span class="owner-post">By <%= posts[i].author_name%> </span> - <%= posts[i].date%>
+              </h4>
+              <div class="edit-box">
+                <form action="/posts/<%= posts[i].id %>/delete" method="post">
+                  <a class="edit-btn" href="/posts/<%= posts[i].id %>/edit">Edit Post</a>
+                  <button class="delete-btn">Delete Post</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <%}%>
+            <%}%>
+              <% } %>
+
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>
