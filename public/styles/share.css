@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+li,
+a,
+button {
+  font-family: inherit;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+/* nav bar header */
+#nav-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem 4rem;
+  background-color: #d8e2dc;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+#nav-subbox-left,
+#nav-subbox-middle,
+#nav-subbox-right,
+#nav-subsubbox-right {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+#nav-subsubbox-right {
+  column-gap: 1rem;
+}
+
+svg {
+  height: 1rem;
+}
+
+#nav-box li a:hover,
+#nav-subsubbox-right li a svg:hover,
+#nav-subbox-left li svg:hover {
+  fill: #9d8189;
+  color: #9d8189;
+  cursor: pointer;
+}
+
+#nav-subbox-middle {
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+}
+
+#subscribe-box {
+  background-color: #ffe5d9;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+/* header text */
+#text-header {
+  padding: 5rem 15rem 3rem 15rem;
+  font-size: xx-large;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+header {
+  background-color: #ffe5d9;
+}
+
+.emp-font {
+  color: #f4acb7;
+}
+
+.header-browse {
+  width: 45rem;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 3rem;
+  padding: 0.5rem 1rem 0.5rem 5rem;
+  color: #9d8189;
+  border: 0.5rem solid #d8e2dc;
+  border-radius: 15rem;
+  background-color: #d8e2dc;
+  margin-top: 2rem;
+}
+
+.header-browse svg {
+  height: 3rem;
+  background-color: #ffe5d9;
+  padding: 0.5rem;
+  border-radius: 50%;
+  float: right;
+}
+
+/* main body */
+main {
+  text-align: center;
+}
+
+#categories-nav button {
+  padding: 0.05rem 2rem;
+  font-size: 2rem;
+  background-color: #ffffff;
+  border: 0.2rem solid #ffffff;
+  border-radius: 2rem;
+}
+
+#categories-nav button:hover {
+  cursor: pointer;
+  background-color: #ffe5d9;
+  border: 0.2rem solid #ffe5d9;
+  border-radius: 2rem;
+}

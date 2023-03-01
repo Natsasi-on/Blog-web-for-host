@@ -1,0 +1,145 @@
+main {
+  padding: 0 13rem;
+}
+
+main button {
+  background-color: #FFE5D9;
+  border: 0.2rem solid #FFE5D9;
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+
+main h1,
+main p {
+  margin: 0.2rem 0;
+}
+
+main img {
+  width: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+#top-post {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 1rem;
+  text-align: left;
+}
+
+.read-more a,
+.read-more {
+  color: #F4ACB7;
+}
+
+h4 {
+  color: #9e999a;
+  font-size: smaller;
+}
+
+.owner-post {
+  color: #9D8189;
+  font-size: normal;
+}
+
+/* main left box */
+#main-left-box h1 {
+  font-size: xx-large;
+}
+
+#main-left-box p {
+  font-size: x-large;
+}
+
+
+#main-left-box {
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+#main-post-left-image {
+  height: 50rem;
+  width: 100%;
+}
+
+#main-post-left-image img {
+  object-fit: cover;
+  height: 99%;
+}
+
+/* main right box */
+
+#main-right-box1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+#main-right-box2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+#main-right-box3 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.main-post-right-image img {
+  height: 15rem;
+}
+
+/* center section */
+#sub-top-posts-section {
+  text-align: left;
+
+}
+
+.sub-top-posts-box {
+  /* background-color: #FFE5D9; */
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.1rem solid #FFE5D9;
+  border-radius: 1rem;
+}
+
+.edit-box {
+  text-align: right;
+}
+
+
+.edit-box button {
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  background-color: #9D8189;
+  border: 0.1rem solid #9D8189;
+  color: #FFE5D9;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.edit-box button:hover {
+  background-color: #FFE5D9;
+  border: 0.1rem solid #FFE5D9;
+  color: #9D8189;
+  cursor: pointer;
+}
+
+
+.edit-box a {
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  background-color: #9D8189;
+  border: 0.1rem solid #9D8189;
+  color: #FFE5D9;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.edit-box a:hover {
+  background-color: #FFE5D9;
+  border: 0.1rem solid #FFE5D9;
+  color: #9D8189;
+  cursor: pointer;
+}

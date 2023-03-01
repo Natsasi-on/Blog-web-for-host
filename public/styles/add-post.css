@@ -1,0 +1,55 @@
+#text-header {
+    padding: 5rem 15rem;
+}
+
+#add-post {
+    padding: 0 13rem;
+    text-align: left;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    height: 1.6rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 15rem;
+    white-space: pre-wrap;
+}
+
+#add-post span {
+    margin-right: 2rem;
+}
+
+label {
+    font-size: 1.50rem;
+}
+
+.btn {
+    text-align: right;
+}
+
+button {
+    border-radius: 0.8rem;
+    padding: 0.5rem 1rem;
+    background-color: #9D8189;
+    border: 0.1rem solid #9D8189;
+    color: #FFE5D9;
+    font-size: 1.3rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #FFE5D9;
+    border: 0.1rem solid #FFE5D9;
+    color: #9D8189;
+}
+
+select {
+    width: 10rem;
+    margin-left: 2rem;
+}
