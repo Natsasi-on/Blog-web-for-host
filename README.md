@@ -33,16 +33,16 @@ This website leverages several key technologies and techniques to provide a smoo
 
 * **CRUD Operations**: Implements CRUD (Create, Read, Update, Delete) operations, making it easy to edit, delete, or add new articles.
 
-
-## License
-
-This project is licensed under the Natsasion License. For detailed information, please refer to the [LICENSE](LICENSE.md) file.
-
 ## Get Started
 
 Explore our live website to discover a diverse range of articles and share your own thoughts!
 
 For more details, visit the [Live website](https://article-blog-website.onrender.com/index).
+
+## License
+
+This project is licensed under the Natsasion License. For detailed information, please refer to the [LICENSE](LICENSE.md) file.
+
 
 ## Contact
 
