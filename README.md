@@ -5,6 +5,18 @@
     <a href="https://article-blog-website.onrender.com/index">[ Live Website ]</a>
 </p>
 
+## Project Overview
+
+The purpose of this project is to create a blog website where users can publish their thoughts and use it as a personal note-taking platform.
+
+## Key Features
+
+Explore the standout features of our website:
+
+- **Node.js and Express**: The website is powered by Node.js and Express, providing a robust and responsive server.
+- **EJS Templates**: EJS is used for templating, ensuring dynamic and data-driven web pages.
+- **User Post Articles**: Users can create, edit, and delete their posts.
+  
 ## Technologies and Techniques Utilized
 
 This website leverages several key technologies and techniques to provide a smooth user experience:
@@ -21,17 +33,6 @@ This website leverages several key technologies and techniques to provide a smoo
 
 * **CRUD Operations**: Implements CRUD (Create, Read, Update, Delete) operations, making it easy to edit, delete, or add new articles.
 
-## Project Overview
-
-The purpose of this project is to create a blog website where users can publish their thoughts and use it as a personal note-taking platform.
-
-## Key Features
-
-Explore the standout features of our website:
-
-- **Node.js and Express**: The website is powered by Node.js and Express, providing a robust and responsive server.
-- **EJS Templates**: EJS is used for templating, ensuring dynamic and data-driven web pages.
-- **User Post Articles**: Users can create, edit, and delete their posts.
 
 ## License
 
