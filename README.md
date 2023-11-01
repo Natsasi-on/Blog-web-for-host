@@ -1,4 +1,4 @@
-<h1 align="center">Blogging Website</h1>
+<h1 align="center">Blog Website</h1>
 <p align="center">
     Welcome to the Blog Website, where you can share your ideas online and access them from anywhere.
     <br>
